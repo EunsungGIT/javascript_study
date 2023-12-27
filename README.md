@@ -81,3 +81,13 @@
 ### 객체 속성 추가와 제거
 * delete 객체 속성 제거
 * 객체 속성 추가는 변경과 동일
+------------------------
+## window.location
+* 문서의 URL를 관리하는 Location 객체 속성
+## window.document, window.open
+* window.document.write
+* window.document.body
+* 현재 창의 문서(document) 읽기, 쓰기, 수정
+
+* window.open(url, target, features)
+* 새로운 창을 열거나 새 탭을 생성하는 메서드
