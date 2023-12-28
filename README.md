@@ -91,3 +91,36 @@
 
 * window.open(url, target, features)
 * 새로운 창을 열거나 새 탭을 생성하는 메서드
+------------------------
+## DOM(Document Object Model)
+* DOM트리를 구성하는 객체 -> 노드(Node)
+* HTML 요소를 가리키는 객체 -> HTML 요소 노드
+* 텍스트를 가리키는 객체 -> 텍스트 노드
+* 탭, 공백, 줄바꿈 -> 공백 노드
+### getElementsByTagName
+* 지정된 태그 이름을 가진 모든 HTML 요소를 찾아 HTML 노드로 반환합니다.
+* HTML에 TagNode가 2개 이상일 때 그 중 1개만 동적인 기능이 적용되어 DOM으로 등록이 필요한 거라면 변수 지정 시 [index] 설정하고 대입하기
+* HTML에 TagNode가 2개 이상일 때 그 중 여러 개에 동적인 기능이 적용되어 DOM이 된다면 변수 지정 시는 [index] 없이 대입하고 해당 DOM 변수 호출 시 필요한 경우 [index] 사용하기
+### DOM Node 변수 지정 시
+* HTMLCollection 결과는 변수가 정상인지 오류인지 간단한 확인 시에만 사용하고 실제로 DOM Node 변수를 이용한 동적인 결과를 만들어야 할때는 직접적인 접근을 대상을 하나씩 개별인식하게 만들어야한다. [index]
+### getElementsByClassName
+* 지정된 클래스 이름을 가진 모든 HTML 요소를 찾아 HTML 노드로 반환합니다.
+### getElmentsById
+* 지정된 아이디 이름을 가진 모든 HTML 요소를 찾아 HTML 노드로 반환합니다.
+* 아이디는 부모 지정이 필요없음.
+### querySelector
+* 지정된 아이디, 클래스, 태그 이름을 가진 첫번째 HTML 요소를 찾아 HTML 노드로 반환합니다.
+* body에 있는 요소들 기준으로 첫번째만 인식함.
+### querySelectorAll
+* 지정된 아이디, 클래스, 태그 이름을 가진 첫번째 HTML 요소를 찾아 HTML 노드로 반환합니다.
+### Number
+* 문자(string) 형식을 숫자(number)로 변환시킬 수 있다.
+### value
+* form 태그에 삽입되는 값 속성(input, option, select, button, textarea)
+* form 태그 내에 작성했을 땐 미리 입력된 값 표현 가능
+* javascript의 DOM.속성 `ex)DOM.value` 로 처리했을 땐 해당 DOM의 미리 입력된 값부터 사용자가 입력하는 신규 값까지 모두 인식할 수 있다.
+1. 쇼핑몰의 상품 수량
+2. 쇼핑몰의 총 주문 가격
+3. 예약페이지의 여행 인원 수 등등...
+* 주의사항 -> value속성은 form전용이므로 다른 태그일 때 해당 값을 알고 싶다면 다른 속성 및 메서드를 사용해야 한다.
+* 주의사항 -> `DOM.value`로 값 처리 시 숫자를 쓰더라도 문자열(string)으로 인식하기 때문에 필요한 경우 `Number()` 메서드를 활용해 (Number) 데이터타입으로 변환해야 한다. ex `Number(객체.value())`
