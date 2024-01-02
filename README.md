@@ -124,3 +124,11 @@
 3. 예약페이지의 여행 인원 수 등등...
 * 주의사항 -> value속성은 form전용이므로 다른 태그일 때 해당 값을 알고 싶다면 다른 속성 및 메서드를 사용해야 한다.
 * 주의사항 -> `DOM.value`로 값 처리 시 숫자를 쓰더라도 문자열(string)으로 인식하기 때문에 필요한 경우 `Number()` 메서드를 활용해 (Number) 데이터타입으로 변환해야 한다. ex `Number(객체.value())`
+## DOM 관계속성
+* parentNode 부모 노드
+* parentElement 부모 요소 참조
+* childNodes 자식 요소 참조
+* firstChild 첫번째 자식 노드
+* firstElementChild 첫번째 자식 요소 참조
+* lastChild 마지막 자식 노드
+* lastElementChild 마지막 자식 요소 참조
