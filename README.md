@@ -132,3 +132,21 @@
 * firstElementChild 첫번째 자식 요소 참조
 * lastChild 마지막 자식 노드
 * lastElementChild 마지막 자식 요소 참조
+## DOM 관계속성
+1. parentNode 부모 노드, parentElement 부모 요소
+    - parentNode.parentNode 연속 사용 (부모의 부모 잡기)
+    - 자식 또는 자손노드.parentElement (특정 자식의 부모 잡기)
+2. javascript에서 css 제어하기 -> style 속성
+    - DOM.관계.style = "속성:값; 속성:값; 속성:값;";
+        * (위) style 2번 이상 생성 시 이전 속성:값 제거됨
+    - DOM.관계.관계.style.속성 = "값";
+        * (위) style 2번 이상 생성 시 기존 숙성값에 이어서 추가됨
+    - DOM.style.속성 = "값";
+    - 위 관계는 필요에 따라 선택 속성
+3. childNodes 자식 노드, children, chilElementCount 자식의 수
+4. innerText, innerHTML
+5. firstChild, firstElementChild 첫번째 자식 노드 잡기
+6. lastChild, lastElementChild 마지막 자식 노드 잡기
+7. 형제 노드 잡기
+    - previousSibling, previousElementSibling (이전 형제)
+    - nextSibling, nextElementSibling (다음 형제)
