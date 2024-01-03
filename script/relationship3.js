@@ -1,4 +1,4 @@
-//첫번째 잣기, 마지막 자식 노드 잡기
+//첫번째 잡기, 마지막 자식 노드 잡기
 //firstChild, firstElementChild
 //lastChild, lastElementChild
 const items = document.querySelectorAll('.item')
