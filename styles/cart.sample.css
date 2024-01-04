@@ -1,0 +1,88 @@
+/* layout */
+main {
+    background-color: aqua;
+    width: 1136px; padding: 50px 0 0; margin: 0 auto;
+}
+main .item_detail {display: flex;}
+main .item_detail .left_thumnail {
+    display: flex;
+    background-color: pink; width: calc(100% - 481px);
+}
+main .item_detail .right_container {
+    background-color: yellow; width: 481px;
+}
+/* left_thumnail */
+main .item_detail .left_thumnail .small_thumnail {
+    width: 56px; display: flex; flex-flow: column nowrap;
+}
+main .item_detail .left_thumnail .small_thumnail a {
+    margin-bottom: 10px; width: 56px; height: 56px; overflow: hidden;
+    border: 2px solid #fff; border-radius: 5px;
+}
+main .item_detail .left_thumnail .small_thumnail a img {
+    width: 100%; transition: 0.2s;
+}
+main .item_detail .left_thumnail .big_thumnail {width: calc(100% - 56px); text-align: center;}
+main .item_detail .left_thumnail .big_thumnail img {width: 95%; border-radius: 10px;}
+/* left_thumnail-hover */
+main .item_detail .left_thumnail .small_thumnail a:hover {border: 2px solid #35c5f0;}
+main .item_detail .left_thumnail .small_thumnail a:hover img {transform: scale(1.2);}
+/* right_container */
+main .item_detail .right_container .brank {}
+main .item_detail .right_container .title {}
+main .item_detail .right_container .title h1 {}
+main .item_detail .right_container .title .icon {}
+main .item_detail .right_container .title .icon a {}
+main .item_detail .right_container .title .icon a .fa-bookmark {}
+main .item_detail .right_container .title .icon a span {}
+main .item_detail .right_container .title .icon a .fa-share-nodes {}
+main .item_detail .right_container .review {}
+main .item_detail .right_container .review .score {}
+main .item_detail .right_container .review .score .fa-star {}
+main .item_detail .right_container .review .num {}
+main .item_detail .right_container .price_coupon {}
+main .item_detail .right_container .price_coupon .price {}
+main .item_detail .right_container .price_coupon .price .before {}
+main .item_detail .right_container .price_coupon .price .before span {}
+main .item_detail .right_container .price_coupon .price .before del {}
+main .item_detail .right_container .price_coupon .price .before span .fa-circle-info {}
+main .item_detail .right_container .price_coupon .price .before span .open {}
+main .item_detail .right_container .price_coupon .price .price_result {}
+main .item_detail .right_container .price_coupon .price .price_result em {}
+main .item_detail .right_container .price_coupon .price .price_result span {}
+main .item_detail .right_container .price_coupon .price .price_result .sale {}
+main .item_detail .right_container .price_coupon .price .price_result img {}
+main .item_detail .right_container .price_coupon .coupon_get {}
+main .item_detail .right_container .price_coupon .coupon_get span {}
+main .item_detail .right_container .price_coupon .coupon_get span .fa-arrow-up-from-bracket {}
+main .item_detail .right_container .benefit_shipping {}
+main .item_detail .right_container .benefit_shipping dt {}
+main .item_detail .right_container .benefit_shipping dd {}
+main .item_detail .right_container .benefit_shipping dd span {}
+main .item_detail .right_container .benefit_shipping dd span em {}
+main .item_detail .right_container .benefit_shipping dd span em span {}
+main .item_detail .right_container .benefit_shipping dd span em span .fa-circle-info {}
+main .item_detail .right_container .benefit_shipping dd span em span .open {}
+main .item_detail .right_container .benefit_shipping dd span em span .open .close {}
+main .item_detail .right_container .benefit_shipping dd span em span .open strong {}
+main .item_detail .right_container .benefit_shipping dd .delivery {}
+main .item_detail .right_container .benefit_shipping dd .delivery .fa-check {}
+main .item_detail .right_container .benefit_shipping dd .delivery span {}
+main .item_detail .right_container .benefit_shipping dd .delivery_menu {}
+main .item_detail .right_container .benefit_shipping dd .delivery_menu img {}
+main .item_detail .right_container .benefit_shipping dd .delivery_menu em {}
+main .item_detail .right_container .benefit_shipping dd .delivery_menu span {}
+main .item_detail .right_container .benefit_shipping dd .delivery_menu strong {}
+main .item_detail .right_container .benefit_shipping dd .delivery_menu .fa-chevron-down {}
+main .item_detail .right_container .benefit_shipping dd .delivery_menu_open {}
+main .item_detail .right_container .benefit_shipping dd .delivery_menu_open .list {}
+main .item_detail .right_container .benefit_shipping dd .delivery_menu_open .list .yoil {}
+main .item_detail .right_container .benefit_shipping dd .delivery_menu_open .list .percent {}
+main .item_detail .right_container .benefit_shipping dd .delivery_menu_open strong {}
+main .item_detail .right_container .brank_link {}
+main .item_detail .right_container .brank_link .name {}
+main .item_detail .right_container .brank_link .name img {}
+main .item_detail .right_container .brank_link .link {}
+main .item_detail .right_container .brank_link .link span {}
+main .item_detail .right_container .brank_link .link span .fa-chevron-right {}
+/* right_container-form */
